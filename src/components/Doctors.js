@@ -23,7 +23,6 @@ const Doctors = () => {
     
     
     <div>
-       {/* <img className='list-image' src={image2} alt="horse" /> */}
       <h1>Doctor's List</h1>
       {listOfDoctors.map((value,key) => {
         return (

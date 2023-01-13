@@ -36,3 +36,39 @@
     transform: rotate(360deg);
   }
 }
+
+.image{
+  max-width: 100%;
+  height: auto;
+}
+
+.home2{
+  transform: translate(50px,-600px);
+  margin-left: 30%;
+  margin-right: 20%;
+}
+
+.login-image{
+  max-width: 100%;
+  max-height: auto;
+  aspect-ratio: 16/9;
+}
+
+.list-image{
+  max-width: 100%;
+  max-height: auto;
+}
+
+.loginhome{
+  transform: translate(100px,100px);
+}
+
+.card{
+  margin-left: 900px;
+  margin-bottom: 20px;
+}
+
+.login{
+  margin-right: 3200px;
+  margin-bottom: 20px;
+}

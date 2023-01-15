@@ -1,9 +1,12 @@
 import React from 'react'
+import '../App.css'
 import { useParams } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import axios from 'axios'
 import { useState, useEffect } from 'react'
+import image2 from '../Media/image-2.jpg'
+
 
 
 const Appoinment = () => {
@@ -33,25 +36,47 @@ const Appoinment = () => {
     }
 
   return (
+    
+    
+
     <div className='specificdocform'>
+        <img src={image2} className='appointmentImage'></img>
       <div className='formcontainer'>
-     
-            <label>name: </label>
+          <div className='form-input'>
+          <label>name: </label>
             <input type="text" id='inputAppointment' placeholder="" autoComplete="off" onChange={(event)=>{setName(event.target.value)}}/>
-            <label>age: </label>
+          </div>
+          <div className='form-input'>
+          <label>age: </label>
             <input type="text" id='inputAppointment' placeholder="" autoComplete="off" onChange={(event)=>{setAge(event.target.value)}}/>
-            <label>query: </label>
+          </div>
+          <div className='form-input'>
+          <label>query: </label>
             <input type="text" id='inputAppointment' placeholder="" autoComplete="off" onChange={(event)=>{setQuery(event.target.value)}}/>
-            <label>mobileno: </label>
+          </div>
+          <div className='form-input'>
+          <label>mobileno: </label>
             <input type="text" id='inputAppointment' placeholder="" autoComplete="off" onChange={(event)=>{setMobileno(event.target.value)}}/>
-            <label>date: </label>
-            <input type="date" id='inputAppointment' placeholder="" autoComplete="off" onChange={(event)=>{setDate(event.target.value)}}/>
-            <label>time: </label>
-            <input type="time" id='inputAppointment' placeholder="" autoComplete="off" onChange={(event)=>{setTime(event.target.value)}}/>
+          </div>
             
-            <Button variant="primary" type="submit" onClick={onSubmit}>
+          <div className='form-input'>
+          <label>date: </label>
+            <input type="date" id='inputAppointment' placeholder="" autoComplete="off" onChange={(event)=>{setDate(event.target.value)}}/>
+          </div>
+          <div className='form-input'>
+          <label>time: </label>
+            <input type="time" id='inputAppointment' placeholder="" autoComplete="off" onChange={(event)=>{setTime(event.target.value)}}/>
+          </div>
+
+          <div className='form-input'>
+          <Button variant="primary" type="submit" onClick={onSubmit}>
         Submit
       </Button>
+          </div>
+            
+            
+            
+            
 
       </div>
       

@@ -72,3 +72,37 @@
   margin-right: 3200px;
   margin-bottom: 20px;
 }
+.formcontainer{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.form-input{
+  margin-bottom: 30px;
+  margin-left: 25px;
+  transform: translate(0px, -50rem );
+}
+.appointmentImage{
+  max-width: 100%;
+  height: auto;
+}
+
+.registerimage{
+  width: 100%;
+  height: auto;
+}
+
+.formContainer{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-left: 25px;
+  transform: translate(0px, -50rem );
+  margin-left: 35%;
+}
+
+.registerform{
+margin-bottom: 50%;
+}
+

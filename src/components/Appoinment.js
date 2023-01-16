@@ -7,8 +7,6 @@ import axios from 'axios'
 import { useState, useEffect } from 'react'
 import image2 from '../Media/image-2.jpg'
 
-
-
 const Appoinment = () => {
     let { docId } = useParams();
     const [specificDoctor, setSpecificDoctor] = useState({});
@@ -36,9 +34,6 @@ const Appoinment = () => {
     }
 
   return (
-    
-    
-
     <div className='specificdocform'>
         <img src={image2} className='appointmentImage'></img>
       <div className='formcontainer'>
@@ -46,14 +41,17 @@ const Appoinment = () => {
           <label>name: </label>
             <input type="text" id='inputAppointment' placeholder="" autoComplete="off" onChange={(event)=>{setName(event.target.value)}}/>
           </div>
+
           <div className='form-input'>
           <label>age: </label>
             <input type="text" id='inputAppointment' placeholder="" autoComplete="off" onChange={(event)=>{setAge(event.target.value)}}/>
           </div>
+
           <div className='form-input'>
           <label>query: </label>
             <input type="text" id='inputAppointment' placeholder="" autoComplete="off" onChange={(event)=>{setQuery(event.target.value)}}/>
           </div>
+
           <div className='form-input'>
           <label>mobileno: </label>
             <input type="text" id='inputAppointment' placeholder="" autoComplete="off" onChange={(event)=>{setMobileno(event.target.value)}}/>
@@ -63,6 +61,7 @@ const Appoinment = () => {
           <label>date: </label>
             <input type="date" id='inputAppointment' placeholder="" autoComplete="off" onChange={(event)=>{setDate(event.target.value)}}/>
           </div>
+
           <div className='form-input'>
           <label>time: </label>
             <input type="time" id='inputAppointment' placeholder="" autoComplete="off" onChange={(event)=>{setTime(event.target.value)}}/>
@@ -73,14 +72,8 @@ const Appoinment = () => {
         Submit
       </Button>
           </div>
-            
-            
-            
-            
-
-      </div>
-      
-    </div>
+      </div>      
+   </div>
   )
 }
 
